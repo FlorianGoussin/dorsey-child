@@ -1,0 +1,35 @@
+/*
+Theme Name:   Dorsey Child
+Description:  Dorsey Child Theme
+Author:       Florian Goussin
+Template:     dorsey
+Version:      0.0.1
+*/
+
+/* Posts */
+.content.entries .post-title {
+	margin-bottom: 2rem;
+}
+.content.entries .entry .date-meta,
+.content.entries .entry-comments {
+	display: none;
+}
+
+.books {
+	display: flex;
+	align-items: center;
+  	justify-content: space-between;
+  	width: 100%;
+}
+.book {
+	flex: 1;
+	padding: 2rem;
+}
+.book .image {
+	display: flex;
+	justify-content: center;
+}
+figcaption {
+	text-align: center;
+	padding: 0.75rem;
+}
