@@ -17,19 +17,43 @@ Version:      0.0.1
 
 .books {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
   	justify-content: space-between;
   	width: 100%;
 }
 .book {
 	flex: 1;
-	padding: 2rem;
+	padding: 0 0 1rem;
 }
 .book .image {
 	display: flex;
 	justify-content: center;
+	max-width: 100%;
+	height: 100vw;
 }
-figcaption {
+.book figure figcaption {
+	color: black;
 	text-align: center;
-	padding: 0.75rem;
+	padding: 0.5rem;
+	padding-top: 10px; /* stay consitent with portfolio page */
+}
+.book:hover figure figcaption {
+	color: #709982;
+}
+
+@media (min-width: 768px) {
+	.books {
+		flex-direction: row;
+	}
+	.book {
+		padding: 2rem;
+	}
+	.book .image {
+		width: 180px;
+		height: 180px;
+	}
+	.book figure figcaption {
+		padding: 0.75rem;
+	}
 }

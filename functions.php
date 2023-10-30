@@ -15,12 +15,4 @@ function my_theme_enqueue_styles() {
 		array( $parenthandle ),
 		$theme->get( 'Version' )
 	);
-	// echo 'Stylesheet uri: '.get_stylesheet_uri();
-
-	// wp_enqueue_style( 'child-style', get_stylesheet_uri() );
 }
-
-// add_filter( 'comment_feed_where', 'wpse_comment_feed_where' );
-// function wpse_comment_feed_where( $where ) {
-// 	return $where . " AND wp_posts.post_type NOT IN ( 'book' )";
-// }

@@ -26,11 +26,14 @@
 			        		<div class="image">
 				        		<img 
 				        			src="<?php echo $bookThumbnail['url']; ?>" 
-				        			alt="<?php the_title(); ?>" 
-				        			style="width: 180px; height: 180px" 
+				        			alt="<?php the_title(); ?>"
 				        		/>
 				        	</div>
-			        		<figcaption><?php the_title(); ?></figcaption>
+			        		<figcaption>
+			        			<div class="caption"><!-- extra div in case to mimic portfolio page (potential legacy css) -->
+			        				<h2><?php the_title(); ?></h2>
+			        			</div>
+			        		</figcaption>
 			        	</figure>
 			        </a>
 			    </div>
