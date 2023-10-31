@@ -23,6 +23,7 @@
 		    	<div class="book">
 			    	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 			        	<figure>
+			        		<div class="image-color-overlay"></div>
 			        		<div class="image">
 				        		<img 
 				        			src="<?php echo $bookThumbnail['url']; ?>" 

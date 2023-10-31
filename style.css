@@ -6,6 +6,11 @@ Template:     dorsey
 Version:      0.0.1
 */
 
+:root {
+	--sea-green: rgb(112, 153, 130);
+	--sea-blue: rgb(13, 78, 96);
+}
+
 /* Posts */
 .content.entries .post-title {
 	margin-bottom: 2rem;
@@ -23,6 +28,7 @@ Version:      0.0.1
   	width: 100%;
 }
 .book {
+/*	position: relative;*/
 	flex: 1;
 	padding: 0 0 1rem;
 }
@@ -39,7 +45,7 @@ Version:      0.0.1
 	padding-top: 10px; /* stay consitent with portfolio page */
 }
 .book:hover figure figcaption {
-	color: #709982;
+	color: var(--sea-green);
 }
 
 @media (min-width: 768px) {
@@ -52,6 +58,22 @@ Version:      0.0.1
 	.book .image {
 		width: 180px;
 		height: 180px;
+		border-bottom: 4px solid transparent;
+	}
+	.book:hover .image {
+		border-bottom: 4px solid var(--sea-green);
+	}
+	.book:hover figure .image-color-overlay {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background-color: var(--sea-green);
+		opacity: 0.05;
+	}
+	.book figure {
+		position: relative;
 	}
 	.book figure figcaption {
 		padding: 0.75rem;
