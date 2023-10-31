@@ -11,19 +11,68 @@ Version:      0.0.1
 	--sea-blue: rgb(13, 78, 96);
 }
 
+/* Parent theme adjustments */
+.nf-form-fields-required {
+    font-size: small;
+}
+
+#nf-field-4 {
+    font-size: smaller;
+    background-color: #709982;
+    color: whitesmoke;
+    padding: 8px 4% 8px 3%;
+    border: none;
+}
+
+#nf-field-4:hover {
+    cursor: pointer;
+}
+
+input.ninja-forms-field {
+    padding: 10px 12px;
+}
+
+.page-title {
+    display: none;
+}
+
+textarea#nf-field-3 {
+    max-width: 100%;
+}
+
+.page-contact .nf-form-cont {
+    margin-top: 1em;
+}
+
+/* custom */
+.bg-margin-for-link {
+    margin-top: 8px;
+}
+
+.bg-margin-for-link > .bg-showmore-plg-link {
+    font-size: 1.1em;
+}
+
+.bg-margin-for-link > .bg-showmore-plg-link.bg-arrow::before {
+    margin-right: 0.6em;
+}
+
 #content-area {
     width: auto;
     margin: 0 100px 0 190px;
 }
-/*    margin: 0 292px 0 190px;*/
+/* margin: 0 292px 0 190px; */
 
-/* Posts */
-.content.entries .book-header {
-	margin-bottom: 2rem;
-}
 .content.entries .entry .date-meta,
 .content.entries .entry-comments {
 	display: none;
+}
+
+/* End Parent theme adjustments */
+
+/* Custom Book entries */
+.content.entries .book-header {
+	margin-bottom: 2rem;
 }
 
 .books {
@@ -85,3 +134,4 @@ Version:      0.0.1
 		padding: 0.75rem;
 	}
 }
+/* End Custom Book entries */

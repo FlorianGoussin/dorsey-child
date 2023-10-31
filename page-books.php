@@ -5,7 +5,6 @@
 ?>
 
 <div id="content-area" role="main">
-	<!-- <h1>Books</h1> -->
 	<?php
 		$args = array(
 		    'post_type' => 'book',
