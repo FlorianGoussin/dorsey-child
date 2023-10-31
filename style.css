@@ -110,7 +110,15 @@ textarea#nf-field-3 {
 	.book {
 		padding: 2rem;
 	}
+	.book figure {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	.book .image {
+		display: block;
+		position: relative;
 		width: 180px;
 		height: 180px;
 		border-bottom: 4px solid transparent;
@@ -118,17 +126,14 @@ textarea#nf-field-3 {
 	.book:hover .image {
 		border-bottom: 4px solid var(--sea-green);
 	}
-	.book:hover figure .image-color-overlay {
+	.book:hover .image .image-color-overlay {
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		right: 0;
 		left: 0;
 		background-color: var(--sea-green);
-		opacity: 0.05;
-	}
-	.book figure {
-		position: relative;
+		opacity: 0.25;
 	}
 	.book figure figcaption {
 		padding: 0.75rem;
