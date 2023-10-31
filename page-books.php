@@ -13,18 +13,18 @@
 		    'order' => 'ASC'
 		);
 		$the_query = new WP_Query( $args ); 
+		if ( $the_query->have_posts() ) : 
 	?>
-	<?php if ( $the_query->have_posts() ) : ?>
 		<div class="books">
 		    <?php 
-		    	while ( $the_query->have_posts() ) : $the_query->the_post(); 
+		    	while ( $the_query->have_posts() ) : $the_query->the_post();
+		    	$bookThumbnail = get_field('book_thumbnail'); 
 		    ?>
-		    	<?php $bookThumbnail = get_field('book_thumbnail'); ?>
 		    	<div class="book">
 			    	<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 			        	<figure>
-			        		<div class="image-color-overlay"></div>
 			        		<div class="image">
+			        			<div class="image-color-overlay"></div>
 				        		<img 
 				        			src="<?php echo $bookThumbnail['url']; ?>" 
 				        			alt="<?php the_title(); ?>"

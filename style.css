@@ -11,8 +11,14 @@ Version:      0.0.1
 	--sea-blue: rgb(13, 78, 96);
 }
 
+#content-area {
+    width: auto;
+    margin: 0 100px 0 190px;
+}
+/*    margin: 0 292px 0 190px;*/
+
 /* Posts */
-.content.entries .post-title {
+.content.entries .book-header {
 	margin-bottom: 2rem;
 }
 .content.entries .entry .date-meta,
