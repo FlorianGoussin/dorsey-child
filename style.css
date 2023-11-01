@@ -106,6 +106,7 @@ textarea#nf-field-3 {
 @media (min-width: 768px) {
 	.books {
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
 	.book {
 		padding: 2rem;

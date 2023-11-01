@@ -8,7 +8,7 @@
 	<?php
 		$args = array(
 		    'post_type' => 'book',
-		    'posts_per_page' => 9,
+		    'posts_per_page' => 12,
 		    'order' => 'ASC'
 		);
 		$the_query = new WP_Query( $args ); 
