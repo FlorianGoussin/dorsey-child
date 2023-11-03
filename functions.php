@@ -18,8 +18,6 @@ function my_theme_enqueue_styles() {
 }
 
 // Infinite Scroll
-// https://www.billerickson.net/infinite-scroll-in-wordpress/
-// https://gist.githubusercontent.com/billerickson/c88b2c886e47e096c153/raw/3a4afb304323a8667b326d330c63b0ec1930eb4c/functions.php
 function infinite_scroll_handler(){
     $args = isset( $_POST['query'] ) 
      	? array_map( 'esc_attr', $_POST['query'] ) // Escaping for HTML attributes
