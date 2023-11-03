@@ -16,6 +16,11 @@ Version:      0.0.1
     font-size: small;
 }
 
+/* TODO: needs some styling */
+/*#infinite-scroll_loader {
+	visibility: 'hidden';
+}*/
+
 #nf-field-4 {
     font-size: smaller;
     background-color: #709982;
@@ -71,6 +76,16 @@ textarea#nf-field-3 {
 /* End Parent theme adjustments */
 
 /* Custom Book entries */
+svg {
+	width: 100px;
+	height: 100px;
+	margin: 20px;
+	display: inline-block;
+}
+svg > path {
+	fill: var(--sea-blue);
+}
+
 .content.entries .book-header {
 	margin-bottom: 2rem;
 }
@@ -84,7 +99,7 @@ textarea#nf-field-3 {
 }
 .book {
 /*	position: relative;*/
-	flex: 1;
+	flex: 0 0;
 	padding: 0 0 1rem;
 }
 .book .image {
