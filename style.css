@@ -7,9 +7,17 @@ Version:      0.0.1
 */
 
 :root {
-	--sea-green: rgb(112, 153, 130);
-	--sea-blue: rgb(13, 78, 96);
+	--sea-green: 112, 153, 130;
+	--sea-blue: 13, 78, 96;
 }
+
+/*@font-face {
+    font-family: 'special_eliteregular';
+    src: url('fonts/specialelite-regular-webfont.woff2') format('woff2'),
+         url('fonts/specialelite-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}*/
 
 /* Parent theme adjustments */
 .nf-form-fields-required {
@@ -71,6 +79,54 @@ textarea#nf-field-3 {
 /* End Parent theme adjustments */
 
 /* Custom Book entries */
+#content-area .content blockquote,
+#content-area .content cite {
+/*	font-family: 'special_eliteregular', courier;*/
+	font-family: 'Dosis', courier;
+}
+#content-area .content blockquote {
+	border-left: 5px solid rgb(var(--sea-green), 0.5);
+/*	border-left: none;*/
+	margin-bottom: 0.25rem;
+}
+.book-review {
+	margin: 0.75rem 0;
+/*	padding: 1rem 2.5rem;*/
+	padding: 1rem 2rem;
+}
+.book-review blockquote {
+	font-weight: 100;
+	font-size: 2rem;
+	width: fit-content;
+	line-height: 1.4;
+	position: relative;
+	margin: 0;
+	padding: .5rem;
+}
+/*.book-review blockquote:before,
+.book-review blockquote:after {
+	position: absolute;
+	color: rgb(var(--sea-blue));
+	opacity: 0.25;
+	font-size: 7rem;
+	width: 4rem;
+	height: 4rem;
+}
+.book-review blockquote:before {
+	content: '“';
+	left: -2.3rem;
+	top: -2rem;
+}
+.book-review blockquote:after {
+	content: '”';
+	right: -2.3rem;
+	bottom: 1rem;
+}*/
+.book-review cite {
+	line-height: 3;
+	text-align: left;
+}
+
 #infinite-scroll_loader {
 	display: flex;
 	justify-content: center;
@@ -82,7 +138,7 @@ textarea#nf-field-3 {
 	margin: 20px;
 }
 #infinite-scroll_loader svg > circle {
-	fill: var(--sea-blue);
+	fill: rgb(var(--sea-blue));
 }
 
 .content.entries .book-header {
@@ -114,7 +170,7 @@ textarea#nf-field-3 {
 	padding-top: 10px; /* stay consitent with portfolio page */
 }
 .book:hover figure figcaption {
-	color: var(--sea-green);
+	color: rgb(var(--sea-green));
 }
 
 @media (min-width: 768px) {
@@ -139,7 +195,7 @@ textarea#nf-field-3 {
 		border-bottom: 4px solid transparent;
 	}
 	.book:hover .image {
-		border-bottom: 4px solid var(--sea-green);
+		border-bottom: 4px solid rgb(var(--sea-green));
 	}
 	.book:hover .image .image-color-overlay {
 		position: absolute;
@@ -147,7 +203,7 @@ textarea#nf-field-3 {
 		bottom: 0;
 		right: 0;
 		left: 0;
-		background-color: var(--sea-green);
+		background-color: rgb(var(--sea-green));
 		opacity: 0.25;
 	}
 	.book figure figcaption {
