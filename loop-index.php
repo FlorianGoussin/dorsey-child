@@ -9,13 +9,21 @@ $bookThumbnail = get_field('book_thumbnail');
         	<figure>
         		<div class="image">
         			<div class="image-color-overlay"></div>
-	        		<img 
-	        			src="<?php echo $bookThumbnail['url']; ?>" 
-	        			alt="<?php the_title(); ?>"
-	        		/>
+        			<?php if ($bookThumbnail): ?>
+		        		<img 
+		        			src="<?php echo $bookThumbnail['url']; ?>" 
+		        			alt="<?php the_title(); ?>"
+		        		/>
+		        	<?php else : ?>
+		        		<img 
+		        			class="image-placeholder"
+		        			src="<?php echo esc_url(get_stylesheet_directory_uri().'/images/image-placeholder.png'); ?>" 
+		        			alt="<?php the_title(); ?> missing."
+		        		/>
+		        	<?php endif;  ?>
 	        	</div>
         		<figcaption>
-        			<div class="caption"><!-- extra div in case to mimic portfolio page (potential legacy css) -->
+        			<div class="caption">
         				<h2><?php the_title(); ?></h2>
         			</div>
         		</figcaption>
