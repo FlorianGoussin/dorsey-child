@@ -230,17 +230,17 @@ function add_book_reviews() {
 
 	$postsJson = file_get_contents(get_stylesheet_directory().'/data/posts.json');
 	$posts = json_decode($postsJson, true);
+	$postType = 'book-review';
 
-	if ( !$posts || !$posts['book-review'] ) {
+	if ( !$posts || !$posts[$postType] ) {
 		return;
 	}
-
-	foreach($posts['book-review'] as $review) {
+	foreach($posts[$postType] as $review) {
 		$reviewPostId = null;
 		if ( post_exists($review['title']) ) {
 			$query = array(
-				"post_type" => "book-review",
-				"s" => $review['title'],
+				'post_type' => $postType,
+				's' => $review['title'],
 				'posts_per_page' => 1,
 				'max_num_pages' => 1,
 			);
@@ -254,7 +254,7 @@ function add_book_reviews() {
 				'post_content' => '<p>'.$review['content'].'</p>',
 				'post_status' => 'publish',
 				'post_author' => 1,
-				'post_type' => 'book-review'
+				'post_type' => $postType
 			);
 			$reviewPostId = wp_insert_post( $reviewPost );
 		}
@@ -265,6 +265,94 @@ function add_book_reviews() {
 	}
 }
 add_action('init','add_book_reviews');
+
+
+function add_books() {
+	// https://wordpress.stackexchange.com/questions/218715/fatal-error-call-to-undefined-function-post-exists
+	if ( !function_exists( 'post_exists' ) ) {
+	    require_once( ABSPATH . 'wp-admin/includes/post.php' );
+	}
+
+	$postsJson = file_get_contents(get_stylesheet_directory().'/data/posts.json');
+	$posts = json_decode($postsJson, true);
+	$postType = 'book';
+
+	if ( !$posts || !$posts['book'] ) {
+		return;
+	}
+	foreach($posts[$postType] as $post) {
+		if ( post_exists($post['title']) ) {
+			return;
+		}
+		$postPost = array(
+			'post_title' => $post['title'],
+			'post_content' => $post['content'],
+			'post_status' => 'publish',
+			'post_author' => 1,
+			'post_type' => $postType
+		);
+		$postId = wp_insert_post( $postPost );
+		foreach (array_keys($post) as $postKey) {
+			if (in_array($postKey, array('title', 'content')) ) {
+				continue;
+			}
+			update_field( $postKey, $post[$postKey], $postId );
+		}
+	}
+}
+// add_action('init','add_books');
+
+
+function save_books_to_json() {
+	$fileDirectory = get_stylesheet_directory().'/data/posts.json';
+	$postsJson = file_get_contents($fileDirectory);
+	$posts = json_decode($postsJson, true);
+
+	if ($posts && $posts['book']) {
+		return;
+	}
+
+	$query = array( 
+		'post_type' => 'book',
+		'posts_per_page' => -1,
+		'order' => 'ASC',
+	);
+	$the_query = new WP_Query( $query );
+	if ( !$the_query->have_posts() ) {
+		return null;
+	}
+
+	$books = array();
+	foreach ($the_query->posts as $post) {
+		$title = $post->post_title;
+		$content = $post->post_content;
+		$bookTitle = get_field( 'book_title', $post->ID );
+		$bookPublisher = get_field( 'book_publisher', $post->ID );
+		$bookAuthor = get_field( 'book_author', $post->ID );
+		$bookPublishDate = get_field( 'book_publish_date', $post->ID );
+		$bookPublishDateFormat = get_field( 'book_publish_date_format', $post->ID );
+		$bookGenre = get_field( 'book_genre', $post->ID );
+		$bookThumbnail = get_field( 'book_thumbnail', $post->ID );
+		array_push($books, array(
+			'title' => $title,
+			'content' => $content,
+			'book_title' => $bookTitle,
+			'book_publisher' => $bookPublisher,
+			'book_author' => $bookAuthor,
+			'book_publish_date' => $bookPublishDate,
+			'book_publish_date_format' => $bookPublishDateFormat,
+			'book_genre' => $bookGenre,
+			// 'book_thumbnail' => $bookThumbnail
+		));
+	}
+	$posts['book'] = $books;
+	$newPosts = json_encode($posts, JSON_PRETTY_PRINT);
+
+	$postsFile = fopen($fileDirectory, 'w') or die('Unable to open file');
+	fwrite($postsFile, $newPosts);
+	fclose($postsFile);
+}
+add_action('init','save_books_to_json');
 
 // Infinite Scroll
 function infinite_scroll_handler() {

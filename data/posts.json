@@ -45,5 +45,49 @@
 			"content": "This dreamlike picture book traces a family’s similar arc. . .with loose, thin-lined illustrations that reflect the child’s feelings of being unmoored, this spare picture book thoughtfully explores the difficulties of limited childhood perspective and settling in a new place.",
 			"book": "Where Butterflies Fill the Sky"
 		}
-	]
+	],
+    "book": [
+        {
+            "title": "Where Butterflies Fill the Sky",
+            "content": "<!-- wp:paragraph -->\n<p>Zahra lives in a beautiful place where the desert reaches all the way to the sea and one hundred butterflies always fill the sky. When Baba and Mama tell her that their family is no longer welcome here and they must leave, Zahra wonders if she will ever feel at home again--and what about the people she will leave behind? But when she and her family arrive in a new desert, she's surprised to find magic all around her. Home might not be as far away as she thought it would be.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>With spare, moving text and vivid artwork, Zahra Marwan tells the true story of her and her family's immigration from Kuwait, where they were considered stateless, to New Mexico, where together they made a new home.<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>[book_review title=\"School Library Journal, starred review\"]<\/p>\n<!-- \/wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>[book_review title=\"npr\"]<\/p>\n<!-- \/wp:paragraph -->",
+            "book_title": "Where Butterflies Fill the Sky",
+            "book_publisher": {
+                "title": "Bloomsbury Publishing NYC",
+                "url": "https:\/\/www.bloomsbury.com\/us\/",
+                "target": "_blank"
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "03\/29\/2022",
+            "book_publish_date_format": "j M Y",
+            "book_genre": "Children books"
+        },
+        {
+            "title": "The Sunflowers",
+            "content": "",
+            "book_title": "The Sunflowers",
+            "book_publisher": {
+                "title": "",
+                "url": "Feiwel and Friends",
+                "target": ""
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "10\/17\/2024",
+            "book_publish_date_format": "j F Y",
+            "book_genre": "Children books"
+        },
+        {
+            "title": "The Goldfish",
+            "content": "<!-- wp:paragraph -->\n<p>some description<\/p>\n<!-- \/wp:paragraph -->",
+            "book_title": "The Goldfish",
+            "book_publisher": {
+                "title": "",
+                "url": "Astra Books for Young Readers",
+                "target": ""
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "10\/26\/2024",
+            "book_publish_date_format": "j F Y",
+            "book_genre": "Children books"
+        }
+    ]
 }

@@ -1,0 +1,233 @@
+{
+    "book-review": [
+		{
+			"title": "NPR",
+			"content": "Utterly original and enjoyable from start to finish.",
+			"book": "Where Butterflies Fill the Sky"
+		},
+		{
+			"title": "BCCB, starred review",
+			"content": "The interplay of simple, literal prose and complex, figurative illustration here lifts this sensitive and useful picture book on immigration into an inviting exploration of how experiences are transformed by time and memory.",
+			"book": "Where Butterflies Fill the Sky"
+		},
+		{
+			"title": "School Library Journal, starred review",
+			"content": "Every page includes tiny imaginative details to enchant attentive readers: flowers, birds, fish, prayer beads, oud, guitarrón, and much more. This sensitive and beautifully depicted story should touch all young readers, regardless of family background or origin.",
+			"book": "Where Butterflies Fill the Sky"
+		},
+		{
+			"title": "The Horn Book",
+			"content": "A nuanced representation of belonging and citizenship that will ring true for many whose sense of home has never been absolute.",
+			"book": "Where Butterflies Fill the Sky"
+		},
+		{
+			"title": "Kirkus Reviews",
+			"content": "The affectionate text is accompanied by traditionally created watercolor illustrations, the palette conveying the feel and beauty of the places featured in the book. A valuable insight into the world of immigration and displacement.",
+			"book": "Where Butterflies Fill the Sky"
+		},
+		{
+			"title": "School Library Connection",
+			"content": "Zahra Marwan’s stylistic ink and watercolor illustrations are magnificent, incorporating motifs, memories, and colors of both cultures throughout . . . This book seamlessly connects the two cultures, enhancing this simply told story rich in the concepts of immigration, family, and home.",
+			"book": "Where Butterflies Fill the Sky"
+		},
+		{
+			"title": "Booklist",
+			"content": "Judge this book by its gorgeous cover, note the promise held in its title, and stay through the end for its hopeful message. In this dreamlike memoir, Marwan recounts her family’s immigration from Kuwait to New Mexico in sparse prose and whimsical, vibrant watercolor illustrations.",
+			"book": "Where Butterflies Fill the Sky"
+		},
+		{
+			"title": "Shelf Awareness — Smithsonian Asian Pacific American Center",
+			"content": "Her initial sketches are refined then enhanced with ink and watercolor washes, creating enchanting, winsome scenes. Without erasing the difficulties of displacement and reinvention in a strange land, Marwan ensures a colorful, captivating odyssey for younger readers.",
+			"book": "Where Butterflies Fill the Sky"
+		},
+		{
+			"title": "Publishers Weekly",
+			"content": "This dreamlike picture book traces a family’s similar arc. . .with loose, thin-lined illustrations that reflect the child’s feelings of being unmoored, this spare picture book thoughtfully explores the difficulties of limited childhood perspective and settling in a new place.",
+			"book": "Where Butterflies Fill the Sky"
+		}
+	],
+    "book": [
+        {
+            "title": "Where Butterflies Fill the Sky",
+            "content": "<!-- wp:paragraph -->\n<p>Zahra lives in a beautiful place where the desert reaches all the way to the sea and one hundred butterflies always fill the sky. When Baba and Mama tell her that their family is no longer welcome here and they must leave, Zahra wonders if she will ever feel at home again--and what about the people she will leave behind? But when she and her family arrive in a new desert, she's surprised to find magic all around her. Home might not be as far away as she thought it would be.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>With spare, moving text and vivid artwork, Zahra Marwan tells the true story of her and her family's immigration from Kuwait, where they were considered stateless, to New Mexico, where together they made a new home.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>[book_review title=\"School Library Journal, starred review\"]</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>[book_review title=\"npr\"]</p>\n<!-- /wp:paragraph -->",
+            "book_title": "Where Butterflies Fill the Sky",
+            "book_publisher": {
+                "title": "Bloomsbury Publishing NYC",
+                "url": "https://www.bloomsbury.com/us/",
+                "target": "_blank"
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "03/29/2022",
+            "book_publish_date_format": "j M Y",
+            "book_genre": "Children books"
+        },
+        {
+            "title": "The Sunflowers",
+            "content": "",
+            "book_title": "The Sunflowers",
+            "book_publisher": {
+                "title": "",
+                "url": "Feiwel and Friends",
+                "target": ""
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "10/17/2024",
+            "book_publish_date_format": "j F Y",
+            "book_genre": "Children books"
+        },
+        {
+            "title": "The Goldfish",
+            "content": "<!-- wp:paragraph -->\n<p>some description</p>\n<!-- /wp:paragraph -->",
+            "book_title": "The Goldfish",
+            "book_publisher": {
+                "title": "",
+                "url": "Astra Books for Young Readers",
+                "target": ""
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "10/26/2024",
+            "book_publish_date_format": "j F Y",
+            "book_genre": "Children books"
+        },
+        {
+            "title": "Where Butterflies Fill the Sky #9",
+            "content": "<img src=\"https://staging.zahramarwan.com/wp-content/uploads/2023/09/sakina-sketch.jpg\" alt=\"\" width=\"3565\" height=\"3000\" class=\"alignnone size-full wp-image-1325\" /><!-- wp:paragraph -->\r\n<p>Zahra lives in a beautiful place where the desert reaches all the way to the sea and one hundred butterflies always fill the sky. When Baba and Mama tell her that their family is no longer welcome here and they must leave, Zahra wonders if she will ever feel at home again--and what about the people she will leave behind? But when she and her family arrive in a new desert, she's surprised to find magic all around her. Home might not be as far away as she thought it would be.</p>\r\n<!-- /wp:paragraph -->\r\n\r\n<!-- wp:paragraph -->\r\n<p>With spare, moving text and vivid artwork, Zahra Marwan tells the true story of her and her family's immigration from Kuwait, where they were considered stateless, to New Mexico, where together they made a new home.</p>\r\n<!-- /wp:paragraph -->",
+            "book_title": "Where Butterflies Fill the Sky #9",
+            "book_publisher": {
+                "title": "",
+                "url": "Bloomsbury",
+                "target": ""
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "",
+            "book_publish_date_format": "j F Y",
+            "book_genre": "Children books"
+        },
+        {
+            "title": "Where Butterflies Fill the Sky #11",
+            "content": "<!-- wp:paragraph -->\n<p>Zahra lives in a beautiful place where the desert reaches all the way to the sea and one hundred butterflies always fill the sky. When Baba and Mama tell her that their family is no longer welcome here and they must leave, Zahra wonders if she will ever feel at home again--and what about the people she will leave behind? But when she and her family arrive in a new desert, she's surprised to find magic all around her. Home might not be as far away as she thought it would be.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>With spare, moving text and vivid artwork, Zahra Marwan tells the true story of her and her family's immigration from Kuwait, where they were considered stateless, to New Mexico, where together they made a new home.</p>\n<!-- /wp:paragraph -->",
+            "book_title": "Where Butterflies Fill the Sky #11",
+            "book_publisher": {
+                "title": "",
+                "url": "Bloomsbury Publishing NYC",
+                "target": ""
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "",
+            "book_publish_date_format": "j F Y",
+            "book_genre": "Children books"
+        },
+        {
+            "title": "Where Butterflies Fill the Sky #8",
+            "content": "<!-- wp:paragraph -->\n<p>Zahra lives in a beautiful place where the desert reaches all the way to the sea and one hundred butterflies always fill the sky. When Baba and Mama tell her that their family is no longer welcome here and they must leave, Zahra wonders if she will ever feel at home again--and what about the people she will leave behind? But when she and her family arrive in a new desert, she's surprised to find magic all around her. Home might not be as far away as she thought it would be.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>With spare, moving text and vivid artwork, Zahra Marwan tells the true story of her and her family's immigration from Kuwait, where they were considered stateless, to New Mexico, where together they made a new home.</p>\n<!-- /wp:paragraph -->",
+            "book_title": "Where Butterflies Fill the Sky #8",
+            "book_publisher": {
+                "title": "",
+                "url": "Bloomsbury Publishing NYC",
+                "target": ""
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "",
+            "book_publish_date_format": "j F Y",
+            "book_genre": "Children books"
+        },
+        {
+            "title": "Where Butterflies Fill the Sky #6",
+            "content": "<!-- wp:paragraph -->\n<p>Zahra lives in a beautiful place where the desert reaches all the way to the sea and one hundred butterflies always fill the sky. When Baba and Mama tell her that their family is no longer welcome here and they must leave, Zahra wonders if she will ever feel at home again--and what about the people she will leave behind? But when she and her family arrive in a new desert, she's surprised to find magic all around her. Home might not be as far away as she thought it would be.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>With spare, moving text and vivid artwork, Zahra Marwan tells the true story of her and her family's immigration from Kuwait, where they were considered stateless, to New Mexico, where together they made a new home.</p>\n<!-- /wp:paragraph -->",
+            "book_title": "Where Butterflies Fill the Sky #6",
+            "book_publisher": {
+                "title": "",
+                "url": "Bloomsbury Publishing NYC",
+                "target": ""
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "",
+            "book_publish_date_format": "j F Y",
+            "book_genre": "Children books"
+        },
+        {
+            "title": "Where Butterflies Fill the Sky #10",
+            "content": "<!-- wp:paragraph -->\n<p>Zahra lives in a beautiful place where the desert reaches all the way to the sea and one hundred butterflies always fill the sky. When Baba and Mama tell her that their family is no longer welcome here and they must leave, Zahra wonders if she will ever feel at home again--and what about the people she will leave behind? But when she and her family arrive in a new desert, she's surprised to find magic all around her. Home might not be as far away as she thought it would be.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>With spare, moving text and vivid artwork, Zahra Marwan tells the true story of her and her family's immigration from Kuwait, where they were considered stateless, to New Mexico, where together they made a new home.</p>\n<!-- /wp:paragraph -->",
+            "book_title": "Where Butterflies Fill the Sky #10",
+            "book_publisher": {
+                "title": "",
+                "url": "Bloomsbury Publishing NYC",
+                "target": ""
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "",
+            "book_publish_date_format": "j F Y",
+            "book_genre": "Children books"
+        },
+        {
+            "title": "Where Butterflies Fill the Sky #7",
+            "content": "<!-- wp:paragraph -->\n<p>Zahra lives in a beautiful place where the desert reaches all the way to the sea and one hundred butterflies always fill the sky. When Baba and Mama tell her that their family is no longer welcome here and they must leave, Zahra wonders if she will ever feel at home again--and what about the people she will leave behind? But when she and her family arrive in a new desert, she's surprised to find magic all around her. Home might not be as far away as she thought it would be.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>With spare, moving text and vivid artwork, Zahra Marwan tells the true story of her and her family's immigration from Kuwait, where they were considered stateless, to New Mexico, where together they made a new home.</p>\n<!-- /wp:paragraph -->",
+            "book_title": "Where Butterflies Fill the Sky #7",
+            "book_publisher": {
+                "title": "",
+                "url": "Bloomsbury Publishing NYC",
+                "target": ""
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "",
+            "book_publish_date_format": "j F Y",
+            "book_genre": "Children books"
+        },
+        {
+            "title": "Where Butterflies Fill the Sky #5",
+            "content": "<!-- wp:paragraph -->\n<p>Zahra lives in a beautiful place where the desert reaches all the way to the sea and one hundred butterflies always fill the sky. When Baba and Mama tell her that their family is no longer welcome here and they must leave, Zahra wonders if she will ever feel at home again--and what about the people she will leave behind? But when she and her family arrive in a new desert, she's surprised to find magic all around her. Home might not be as far away as she thought it would be.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>With spare, moving text and vivid artwork, Zahra Marwan tells the true story of her and her family's immigration from Kuwait, where they were considered stateless, to New Mexico, where together they made a new home.</p>\n<!-- /wp:paragraph -->",
+            "book_title": "Where Butterflies Fill the Sky #5",
+            "book_publisher": {
+                "title": "",
+                "url": "Bloomsbury Publishing NYC",
+                "target": ""
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "",
+            "book_publish_date_format": "j F Y",
+            "book_genre": "Children books"
+        },
+        {
+            "title": "Where Butterflies Fill the Sky #2",
+            "content": "<!-- wp:paragraph -->\n<p>Zahra lives in a beautiful place where the desert reaches all the way to the sea and one hundred butterflies always fill the sky. When Baba and Mama tell her that their family is no longer welcome here and they must leave, Zahra wonders if she will ever feel at home again--and what about the people she will leave behind? But when she and her family arrive in a new desert, she's surprised to find magic all around her. Home might not be as far away as she thought it would be.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>With spare, moving text and vivid artwork, Zahra Marwan tells the true story of her and her family's immigration from Kuwait, where they were considered stateless, to New Mexico, where together they made a new home.</p>\n<!-- /wp:paragraph -->",
+            "book_title": "Where Butterflies Fill the Sky #2",
+            "book_publisher": {
+                "title": "",
+                "url": "Bloomsbury Publishing NYC",
+                "target": ""
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "",
+            "book_publish_date_format": "j F Y",
+            "book_genre": "Children books"
+        },
+        {
+            "title": "Where Butterflies Fill the Sky #4",
+            "content": "<!-- wp:paragraph -->\n<p>Zahra lives in a beautiful place where the desert reaches all the way to the sea and one hundred butterflies always fill the sky. When Baba and Mama tell her that their family is no longer welcome here and they must leave, Zahra wonders if she will ever feel at home again--and what about the people she will leave behind? But when she and her family arrive in a new desert, she's surprised to find magic all around her. Home might not be as far away as she thought it would be.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>With spare, moving text and vivid artwork, Zahra Marwan tells the true story of her and her family's immigration from Kuwait, where they were considered stateless, to New Mexico, where together they made a new home.</p>\n<!-- /wp:paragraph -->",
+            "book_title": "Where Butterflies Fill the Sky #4",
+            "book_publisher": {
+                "title": "",
+                "url": "Bloomsbury Publishing NYC",
+                "target": ""
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "",
+            "book_publish_date_format": "j F Y",
+            "book_genre": "Children books"
+        },
+        {
+            "title": "Where Butterflies Fill the Sky #3",
+            "content": "<!-- wp:paragraph -->\n<p>Zahra lives in a beautiful place where the desert reaches all the way to the sea and one hundred butterflies always fill the sky. When Baba and Mama tell her that their family is no longer welcome here and they must leave, Zahra wonders if she will ever feel at home again--and what about the people she will leave behind? But when she and her family arrive in a new desert, she's surprised to find magic all around her. Home might not be as far away as she thought it would be.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>With spare, moving text and vivid artwork, Zahra Marwan tells the true story of her and her family's immigration from Kuwait, where they were considered stateless, to New Mexico, where together they made a new home.</p>\n<!-- /wp:paragraph -->",
+            "book_title": "Where Butterflies Fill the Sky #3",
+            "book_publisher": {
+                "title": "",
+                "url": "Bloomsbury Publishing NYC",
+                "target": ""
+            },
+            "book_author": "Zahra Marwan",
+            "book_publish_date": "",
+            "book_publish_date_format": "j F Y",
+            "book_genre": "Children books"
+        }
+    ]
+}
