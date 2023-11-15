@@ -64,11 +64,12 @@ function register_custom_acf_book_fields() {
 				),
 			),
 			'menu_order' => 0,
+			// 'position' => 'acf_after_title',
 			'position' => 'normal',
-			'style' => 'default',
+			'style' => 'seamless',
 			'label_placement' => 'top',
-			'instruction_placement' => 'label',
-			'hide_on_screen' => '',
+			// 'instruction_placement' => 'label',
+			// 'hide_on_screen' => '',
 		) );
 		// Fields
 		acf_add_local_field( array(
@@ -114,7 +115,7 @@ function register_custom_acf_book_fields() {
 			'type' => 'text',
 			'parent' => 'book_fields',
 			'default_value' => 'j F Y',
-			'required' => 1,
+			'required' => 0,
 		) );
 		acf_add_local_field( array(
 			'key' => 'book_genre',
@@ -159,7 +160,7 @@ function register_custom_acf_book_review_fields() {
 				),
 			),
 			'menu_order' => 0,
-			'position' => 'acf_after_title',
+			'position' => 'normal',
 			'style' => 'seamless',
 			'label_placement' => 'top',
 			// 'instruction_placement' => 'label',
@@ -168,7 +169,7 @@ function register_custom_acf_book_review_fields() {
 		// Fields
 		acf_add_local_field( array(
 			'key' => 'book_review_book',
-			'label' => 'Book Review Book WIP',
+			'label' => 'Book Review Book',
 			'name' => 'book_review_book',
 			'type' => 'post_object',
 			'parent' => 'book_review_fields',
@@ -449,15 +450,36 @@ function book_review_shortcode($atts) {
 }
 add_shortcode( 'book_review', 'book_review_shortcode' );
 
+// Book on save
+// Copy book title to book_title field if it's long enough
+// We do that because title may have some unwanted formatting
+function book_publish_handler( $post_id ) {
+	if ( get_post_type($post_id) != 'book' ) {
+		return;
+	}
+	$post = get_post($post_id);
+	if (strlen($post->post_title) > 2) {
+		update_post_meta($post_id, 'book_title', $post->post_title);
+	}
+}
+add_action( 'save_post', 'book_publish_handler' );
 
+// Book review on save
+// Copy book review title to book_review_title field if it's long enough
+// Copy book review content to book_review_content field if it's long enough
+// We do that because title and content may have some unwanted formatting
 function book_review_publish_handler( $post_id ) {
 	if ( get_post_type($post_id) != 'book-review' ) {
 		return;
 	}
 	$post = get_post($post_id);
 	$post_content = trim(strip_tags(apply_filters('the_content', $post->post_content)));
-	update_post_meta($post_id, 'book_review_title', $post->post_title);
-	update_post_meta($post_id, 'book_review_content', $post_content);
+	if (strlen($post->post_title) > 2) {
+		update_post_meta($post_id, 'book_review_title', $post->post_title);
+	}
+	if (strlen($post->post_content) > 5) {
+		update_post_meta($post_id, 'book_review_content', $post_content);
+	}
 }
 add_action( 'save_post', 'book_review_publish_handler' );
 
